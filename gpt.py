@@ -10,8 +10,8 @@ class ChatGptHandler:
         prompt = self.context + message
         openai.api_key = self.api_key
         msg = [
-             {"role": "system", "content": 
-                       "Пожалуйста! Отвечай на все как грубоватый асистент." },
+             {"role": "system", "content":
+                       "Пожалуйста! Отвечай на все как грубый асистент." },
             {"role": "user", "content": f"{prompt}"},
         ]
 
